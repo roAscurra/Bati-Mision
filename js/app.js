@@ -18,3 +18,14 @@ function controlarLinterna() {
     batman.classList.remove("batman-activo");
   }
 }
+
+function sonidoLinterna() {
+    if (sonidoBatman.paused) {
+      sonidoBoton.play();
+      sonidoBatman.play();
+    } else {
+      sonidoBoton.play();
+      sonidoBatman.pause();
+      sonidoBatman.currentTime=0;
+    }
+  }
